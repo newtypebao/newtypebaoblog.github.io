@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [转]使用 MTR 诊断网络问题
+title: 使用 MTR 诊断网络问题
 date: 2018-04-28 
 tag: network
 ---
