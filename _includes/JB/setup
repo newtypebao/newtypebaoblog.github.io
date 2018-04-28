@@ -17,3 +17,5 @@
     {% endif %}  
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}
+
+ {% assign PROJECT_PATH = "newtypebaoblog.github.io" %}
