@@ -18,4 +18,4 @@
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}
 
- {% assign PROJECT_PATH = "newtypebaoblog.github.io" %}
+ {% assign PROJECT_PATH = "newtypebao.github.io" %}

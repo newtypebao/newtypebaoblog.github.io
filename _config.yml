@@ -6,7 +6,7 @@ description: 欢迎来到我的个人站~
 avatarTitle: newtypebao
 # 头像里面的描述
 avatarDesc: 个人博客 / 挨踢人生
-url: "https://newtypebao.github.io/newtypebaoblog.github.io/"
+url: "https://newtypebao.github.io"
 
 # Comment
 comment:
@@ -54,9 +54,9 @@ blog_button:
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 所有文章, description: archive, url: '/newtypebaoblog.github.io/archive'}   
-    - {title: 标签, description: tags, url: '/newtypebaoblog.github.io/tags'}      
-    - {title: 关于我, description: about, url: '/newtypebaoblog.github.io/about'}      
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}      
     
 
 # Pagination
