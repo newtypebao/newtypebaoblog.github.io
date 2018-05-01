@@ -5,12 +5,13 @@ date: 2012-05-24
 tag: android
 ---
 
+```java
 LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);   
 locationManager.requestLocationUpdates("gps", 60000, 1,locationListener); // 每秒更新位置信息，不考虑距离变化。
 Location loc = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 locInfo.setText("维度："+String.valueOf(loc.getLatitude())+" 经度："+String.valueOf(loc.getLongitude()));
 但是通常此时这里的loc为null，因此导致后面的经纬度信息获取不到从而产生NullPointExcetion.
-
+```
 目前我的解决办法是再多获取几次，不知道这算不算android的bug,一次获取位置信息获取不到，但是多获取几次就可以获取到了。代码如下：
 
 ```java
@@ -28,6 +29,7 @@ LocationManager locationManager = (LocationManager) getSystemService(Context.LOC
 
 这个是上面所提到的locationListener，我这里是做个例子，什么也没干。
 
+```java
 private void initlocationListener() {
   locationListener = new LocationListener() {
    // implement necessary methods
@@ -53,3 +55,4 @@ private void initlocationListener() {
    }
   };
  }
+```
