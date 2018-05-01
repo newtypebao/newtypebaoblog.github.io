@@ -51,6 +51,8 @@ tag: network
 
 <div>rpcinfo -p</div>
 
+<div>一般来说命令结果显示如下，有rstatd和portmapper这两个服务的话，就可以正常监控了：</div>
+
 <div>   program vers proto   port  service</div>
 
 <div>    100000    4   tcp    111  portmapper</div>
