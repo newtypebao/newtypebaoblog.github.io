@@ -8,5 +8,4 @@ title: 关于我
 本站主要记录了工作中所遇到的问题、解决的方法以及一些心得。另外也转载了一些个人觉得还比较有用的信息。分享的同时，也作为自己给自己的总结。
 其中早期的文档原是记录在163上本人的blog中的，面对sourceforge被墙，Golang官网被墙，技术工作者也只能苦笑。现逐步迁移到github上，开始更新本站。
 
-{% include comments.html %}
-
+{% include new-old.html %}
