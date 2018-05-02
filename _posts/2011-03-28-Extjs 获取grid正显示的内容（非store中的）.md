@@ -12,7 +12,7 @@ tag: javascript
 
 我想有两种办法：
 
-#####第一种方法：#####
+##### 第一种方法： #####
 
 首先获取到gridview(grid界面上显示的东西一般都是在这个东西里面)，grid.getView()。
 
@@ -29,7 +29,7 @@ grid.getView().getCell(row,col).innerText;
 
  
 
-#####第二种方法：#####
+##### 第二种方法： #####
 
 获取到那个grid对应store中的值，然后用renderer中定义的方法再render一次。
 
