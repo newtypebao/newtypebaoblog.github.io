@@ -34,10 +34,10 @@ public class HelloWorldClient {
 //  ParameterMode.IN);
 //  call.addParameter("pwd",org.apache.axis.Constants.XSD_STRING,
 //  ParameterMode.IN);
-  call.setReturnType(org.apache.axis.encoding.<font color=orange>XMLType.SOAP_VECTOR</font>);
+  call.setReturnType(org.apache.axis.encoding.<span style="color:orange">XMLType.SOAP_VECTOR</span>);
   call.setUseSOAPAction(true);
   call.setSOAPActionURI("wsdl的地址/方法名");
-  <font color=orange>Vector</font> day = (<font color=orange>Vector</font>)call.invoke(new Object[] {});
+  <span style="color:orange">Vector</span> day = (<span style="color:orange">Vector</span>)call.invoke(new Object[] {});
   System.out.println(day.size());
   } catch (Exception e) {
   System.err.println(e.toString());
@@ -47,5 +47,5 @@ public class HelloWorldClient {
  }   
 }
 
-橙色部分是需要注意一下的，如果方法返回的是字符串那么在returnType里面设置为<font color=orange>XMLType.XSD_STRING</font>。此处我的webservive提供的方法返回的是个String[] 因此我将此书设为了<font color=orange>XMLType.SOAP_VECTOR</font>。同时下面返回出来的结果也需要相应的类型转换一下。字符串的话转成String就好了，而数组就转成Vector。自定义类型的数组我还没试过，不知道是啥后果。继续摸索中。。。
+橙色部分是需要注意一下的，如果方法返回的是字符串那么在returnType里面设置为<span style="color:orange">XMLType.XSD_STRING</span>。此处我的webservive提供的方法返回的是个String[] 因此我将此书设为了<span style="color:orange">XMLType.SOAP_VECTOR</span>。同时下面返回出来的结果也需要相应的类型转换一下。字符串的话转成String就好了，而数组就转成Vector。自定义类型的数组我还没试过，不知道是啥后果。继续摸索中。。。
 
