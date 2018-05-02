@@ -2,7 +2,7 @@
 layout: post
 title: Extjs ComboBox 模糊过滤 
 date: 2009-05-23 
-tag: javascipt
+tag: javascript
 ---
 
 了解Ext的朋友们可能知道，在Ext2.0中的Ext.form.ComboBox有个typeAhead的属性可以使combobox在用户输入的同时根据已绑定的数据中弹出一些提示，但是这些提示并不具备模糊过滤的功能，比如绑定的数据中有个叫newtypebao，当输入n的时候可以出现提示，但是输入b或者bao的时候是不会弹出提示的。
