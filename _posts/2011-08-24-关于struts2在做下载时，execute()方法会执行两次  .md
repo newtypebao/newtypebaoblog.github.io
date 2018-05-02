@@ -15,7 +15,8 @@ tag: java
 
 后来网上查了下貌似别人也有遇到这个问题的，最后发现原因：
 
-<font color=red><b>其实这个原因是浏览器引起的，你换成IE浏览器或FireFox浏览器做测试，就不会有这个问题。</b></font>
+<span style="color:red;font-weight:bold;">
+其实这个原因是浏览器引起的，你换成IE浏览器或FireFox浏览器做测试，就不会有这个问题。</span>
 
 我们当时用的是360安全浏览器，导致的这个情况。后来使用IE以及FireFox发现并无此问题。
 
