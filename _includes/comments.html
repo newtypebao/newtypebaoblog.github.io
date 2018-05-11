@@ -1,6 +1,26 @@
 <section class="post-comments">
 
-  {% if site.comment.uyan %}
+  <!-- Gitalk 评论 start  -->
+
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+		clientID: `1e033213280a8152cacb`,
+		clientSecret: `95f9b7071b4e3a1af8aadc74e775406205a5a5e6`,
+		repo: `newtypebao.github.io`,
+		owner: 'newtypebao',
+		admin: ['newtypebao'],
+		id: '{{ page.url }}',
+		distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+</script> 
+<!-- Gitalk end -->
+ {% if site.comment.uyan %}
     <div id="uyan_frame"></div>
 
     <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid="+'{{ site.comment.uyan }}'></script>
@@ -25,5 +45,4 @@
     <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
     
   {% endif %}
-
 </section>
