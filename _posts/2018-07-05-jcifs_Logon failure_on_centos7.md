@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关于通过jcifs无法登陆centos7中SMB服务的问题 
-date: 2018-06-19
+date: 2018-07-05
 tag: smb
 ---
 
