@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [转]https下HttpServletResponse.sendRedirect跳转到http的解决方法
+title: 【转】https下HttpServletResponse.sendRedirect跳转到http的解决方法
 date: 2018-07-19
 tag: Servlet
 ---
@@ -19,7 +19,7 @@ tag: Servlet
 >   /(http)     |(http)  \(http)
 >Container1  Container2  Container3
 
-近日项目中使用了阿里的SLB,在外网使用SSL，然后使用反向代理到具体的Web Container，内网依然使用HTTP进行传输，这样可以节省一些资源，效率也比较高。不过这样做的时候发现所有的 HttpServletResponse.sendRedirect 方法使用相对地址的时候都会跳转到80端口，而不是443，综合测试了一下发现下面的集中解决方案：
+近日项目中使用了阿里的SLB,在外网使用SSL，然后使用反向代理到具体的Web Container，内网依然使用HTTP进行传输，这样可以节省一些资源，效率也比较高。不过这样做的时候发现所有的 HttpServletResponse.sendRedirect 方法使用相对地址的时候都会跳转到80端口，而不是443，经过查找了一些网上的资源，综合发现下面的几种解决方案。目前项目中暂时使用第一个解决方案（绝对路径），供有需要的同学们参考：
 
 ### 解决方案
 跳转的时候url使用绝对地址，而不是相对地址
