@@ -13,7 +13,7 @@ tag: Servlet
 >                      |
 >                     SLB
 >                      |
->             Load Banlancer (Nginx)                外网 
+>             Load Banlancer (Nginx)                外网<br/>
 >              /       |      \
 >            /         |       \                    内网
 >          /(http)     |(http)  \(http)
