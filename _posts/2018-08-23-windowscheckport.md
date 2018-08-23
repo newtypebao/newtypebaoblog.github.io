@@ -9,7 +9,7 @@ tag: Windows,bat
 
 脚本如下：
 
-注：以上脚本中需要将tomcat的目录设置到环境变量中（CATALINA_HOME）
+注：以上脚本中需要将tomcat的目录设置到windows的环境变量中（CATALINA_HOME）
 
 ```
 @echo off
@@ -32,7 +32,7 @@ echo.OK!
 exit
 ```
 
-主要命令讲解：
+主要命令说明：
 
 for /f "tokens=3 delims=: " %%a in ('netstat -an')  ： 
 
