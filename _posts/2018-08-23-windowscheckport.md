@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows下bat脚本判断端口是否可用
+title: Windows下bat脚本判断(tomcat)端口是否可用
 date: 2018-08-23
 tag: Windows,bat
 ---
